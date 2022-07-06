@@ -1,0 +1,111 @@
+@import "../helpers/variables";
+@font-face {
+  font-family: "Ionicons";
+  src:   url(../../fonts/ionicons/fonts/ionicons.woff2) format("woff2") ;
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Flaticon";
+  src:   url(../../fonts/flaticon/font/Flaticon.woff) format("woff")  ;
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'icomoon';;
+  src:   url(../../fonts/icomoon/fonts/icomoon.ttf) format("ttf") ;
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+ul,li{
+  list-style-type: none;
+}
+.container {
+  max-width: 1110px;
+  margin: auto;
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.d-flex {
+  @include display-flex;
+
+  &.justify-content {
+    &-between {
+      justify-content: space-between;
+    }
+
+    &-center {
+      justify-content: center;
+    }
+
+    &-start {
+      justify-content: flex-start;
+    }
+
+    &-end {
+      justify-content: flex-end;
+    }
+  }
+
+  &.align-items {
+    &-center {
+      align-items: center;
+    }
+
+    &-end {
+      align-items: flex-end;
+    }
+
+    &-start {
+      align-items: flex-start;
+    }
+  }
+
+  &.flex-column {
+    flex-direction: column;
+  }
+
+  &-flex-wrap {
+    flex-wrap: wrap;
+  }
+}
+
+.background-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.on {
+  &-desktop {
+    display: block !important;
+    @media #{$media-ipad} {
+      display: none !important;
+    }
+  }
+
+  &-phone {
+    display: none !important;
+    @media #{$media-ipad} {
+      display: block !important;
+    }
+  }
+}
+nav{
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  background: #fff!important;
+  -webkit-box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+}

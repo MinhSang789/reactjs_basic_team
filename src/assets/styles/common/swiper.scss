@@ -1,0 +1,299 @@
+@import "../helpers/variables";
+
+.ourExpertiseHomeSwiper {
+  .swiper {
+    &-slide {
+      height: auto;
+      @media #{$media-ipad} {
+        max-width: 331px;
+      }
+    }
+
+    &-pagination {
+      &-bullet {
+        background-color: #D9D9D9;
+        opacity: 1;
+        transition: 0.3s;
+        width: 10px;
+        height: 10px;
+        min-width: 10px;
+        margin: 0 3px !important;
+
+        &s {
+          @include display-flex;
+          align-items: center;
+          justify-content: center;
+          bottom: 30px !important;
+          @media #{$media-ipad} {
+            bottom: 45px !important;
+          }
+        }
+
+        &-active {
+          border-radius: 12px;
+          width: 38px;
+          min-width: 38px;
+          background-color: #D9D9D9;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+
+  &.swiper {
+    margin-top: 41px;
+    padding-bottom: 70px;
+    @media #{$media-ipad} {
+      margin-top: 50px;
+      padding: 0 20px 100px;
+    }
+  }
+}
+
+.whatWeDoHomeSwiper {
+  @media #{$media-ipad} {
+    padding: 0 20px !important;
+  }
+
+  .swiper {
+    &-slide {
+      height: auto;
+      padding: 2px;
+      @media #{$media-ipad} {
+        max-width: 84.34579vw;
+      }
+    }
+  }
+}
+
+.staffsHomeSwiper {
+  height: 491px;
+  @media #{$media-ipad} {
+    padding: 0 20px !important;
+    height: auto !important;
+  }
+
+  .swiper {
+    &-slide {
+      height: auto;
+      padding-bottom: 31px !important;
+      @media #{$media-ipad} {
+        padding-bottom: 0 !important;
+      }
+    }
+
+    &-pagination {
+      &-bullet {
+        width: 12px;
+        height: 12px;
+        margin: 7.5px 0 !important;
+        @media #{$media-ipad} {
+          width: 10px;
+          height: 10px;
+          margin: 0 6px !important;
+        }
+
+        &s {
+          @include display-flex;
+          flex-direction: column;
+          justify-content: center;
+          bottom: 0 !important;
+          right: 28px !important;
+          height: 359px;
+          top: auto !important;
+          transform: none !important;
+          @media #{$media-ipad} {
+            bottom: 29px !important;
+            right: 0 !important;
+            height: auto !important;
+            flex-direction: row;
+          }
+        }
+      }
+    }
+  }
+}
+
+.serviceHowDoWeWorkSlider {
+  &.swiper {
+    .swiper-wrapper {
+      .swiper-slide {
+        height: auto;
+
+        &:nth-child(1) {
+          background-color: #CCE0FF;
+        }
+
+        &:nth-child(2) {
+          background-color: #FFCCDD;
+        }
+
+        &:nth-child(3) {
+          background-color: #7879F1;
+          color: #FFFFFF;
+        }
+
+        &:nth-child(4) {
+          background-color: #A5A6F6;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+}
+
+.serviceUIDesignSlider {
+  @media #{$media-ipad} {
+    padding: 0 20px !important;
+  }
+
+  &.swiper {
+    .swiper-wrapper {
+      .swiper-slide {
+        height: auto;
+        @media #{$media-ipad} {
+          width: 54.89690721649485% !important;
+        }
+
+        &:nth-child(1) {
+          background-color: #5D5FEF;
+        }
+
+        &:nth-child(2) {
+          background-color: #7879F1;
+        }
+
+        &:nth-child(3) {
+          background-color: #A5A6F6;
+          color: #FFFFFF;
+        }
+
+        &:nth-child(4) {
+          background-color: #EF5DA8;
+          color: #FFFFFF;
+        }
+
+        &:nth-child(5) {
+          background-color: #F178B6;
+          color: #FFFFFF;
+        }
+
+        &:nth-child(6) {
+          background-color: $main-color;
+          color: #FFFFFF;
+        }
+
+        &:nth-child(even) {
+          margin-top: 35px;
+        }
+
+        &:nth-child(odd) {
+          margin-bottom: 35px;
+        }
+      }
+    }
+  }
+}
+
+.techPythonSwiper {
+  &.swiper {
+    padding: 0 20px !important;
+
+    .swiper-slide {
+      height: auto;
+      @media #{$media-ipad} {
+        width: 75.51546391752577%;
+      }
+    }
+  }
+}
+
+//php slider
+.sliderPhp {
+  @media #{$media-ipad} {
+    padding: 0 20px !important;
+  }
+
+  .swiper-wrapper {
+    padding-bottom: 40px;
+
+    .swiper-slide {
+      min-height: 259px;
+      height: auto;
+      @media #{$media-ipad} {
+        max-width: 84.34579439252336vw;
+        min-height: 66.58878504672897vw;
+        margin-top: 42px !important;
+      }
+    }
+  }
+}
+
+.serviceSlider {
+  .swiper {
+    &-button {
+      &-prev, &-next {
+        width: 47px;
+        min-width: 47px;
+        height: 47px;
+        margin-top: 0;
+        transform: translate(0, -50%);
+        @media #{$media-ipad} {
+          min-width: 35px;
+          width: 35px;
+          height: 35px;
+          top: 99px;
+          transform: none;
+        }
+
+        &:after {
+          font-size: 30px;
+          color: #52536D;
+          @media #{$media-ipad} {
+            font-size: 22px;
+          }
+        }
+      }
+
+      &-prev {
+        left: 0;
+      }
+
+      &-next {
+        right: 0;
+      }
+    }
+
+    &-slide {
+      padding: 0 67px;
+      @media #{$media-ipad} {
+        padding: 0 35px;
+      }
+    }
+  }
+}
+
+//item popup
+.mySwiperItem {
+  width: 100%;
+
+  .swiper-wrapper {
+    padding-top: 6px;
+    @media #{$media-ipad} {
+      padding-top: 8px;
+    }
+
+    .swiper-slide {
+      opacity: 0.4;
+      margin-right: 5px;
+      width: 13.11188811188811% !important;
+      @media #{$media-ipad} {
+        width: 21.64948453608247% !important;
+      }
+    }
+
+    .swiper-slide-thumb-active {
+      opacity: 1;
+    }
+  }
+}

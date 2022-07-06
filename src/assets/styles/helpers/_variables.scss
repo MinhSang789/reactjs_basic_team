@@ -1,0 +1,26 @@
+$media-tablet-horizontal: "only screen and (max-width : 1160px)";
+$media-tablet: "only screen and (max-width : 1024px)";
+$media-tablet-vertical: "only screen and (max-width : 900px)";
+$media-ipad: "only screen and (max-width : 768px)";
+$media-small-phone: "only screen and (max-width : 320px)";
+$media-small-fold: "only screen and (max-width : 281px)";
+
+$main-color: #3E95FC;
+$sub-color: #FF6495;
+
+@mixin display-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+@mixin display-flex-important {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: -moz-box !important;
+  display: -moz-flex !important;
+  display: -webkit-flex !important;
+  display: flex !important;
+}
