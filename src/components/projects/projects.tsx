@@ -85,16 +85,16 @@ const Projects=()=>{
                 ))}
             </div>
             <div className={`${styles.info}`}>
-                <div>
+
                     <div className={`${styles.row}`} style={{paddingTop:0}}>
                         {info.map((value,index)=>(
-                            <div className={`${styles.infoItem}`}>
+                            <div className={`${styles.infoItem}`} key={index}>
                                 <strong>{value.number}</strong>
                                 <span>{value.name}</span>
                             </div>
                         ))}
                     </div>
-                </div>
+
             </div>
         </section>
     )
