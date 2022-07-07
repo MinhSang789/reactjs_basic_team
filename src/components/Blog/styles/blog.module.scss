@@ -1,0 +1,137 @@
+@import "../../../assets/styles/helpers/variables";
+
+.blog{
+  padding-top: 112px;
+  h2{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #000;
+    margin: 0 0 24px 0;
+    display: block;
+    text-align: center;
+  }
+  p{
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #999;
+    display: block;
+    text-align: center;
+    max-width: 550px;
+    margin: auto;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 96px;
+
+  }
+  &list{
+    padding-top: 96px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  &Item{
+    width: calc(33.333% - 30px);
+    &Img{
+      overflow: hidden;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 300px;
+    }
+    h3{
+      font-size: 20px;
+      font-weight: 500;
+    }
+    span{
+      color: #3e64ff;
+      margin-bottom: 0;
+      font-size: 16px;
+      font-weight: 700;
+      padding-right: 5px;
+
+    }
+    p{
+      padding-top: 10px;
+      text-align: left;
+      margin: 0;
+    }
+  }
+  .ftco{
+    margin-top: 160px;
+    text-align: center;
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    .overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: '';
+      background: #3e64ff;
+      opacity: .7;
+      z-index: 0;
+    }
+    .content{
+      position: absolute;
+      max-width: 720px;
+      margin: auto;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      h2{
+        color: #fff;
+        font-size: 40px;
+        font-weight: 900;
+        span{
+          color: #a0f669;
+        }
+      }
+      p{
+        color: rgba(255, 255, 255, .9);
+        display: block;
+      }
+      a{
+        box-shadow: 0 24px 36px -11px rgb(0 0 0 / 9%);
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 600;
+        color: white;
+        border-radius: 40px;
+        background: #3e64ff;
+        border: 1px solid #3e64ff!important;
+        padding: 16px 48px;
+        margin-top: 16px;
+        &:hover{
+          color: black;
+          }
+        }
+      }
+    }
+
+
+
+  @media #{$media-ipad} {
+    .blogItem{
+      width: 100%;
+      max-width: 550px;
+      margin: auto;
+    }
+    .ftco{
+      h2{
+        font-size: 30px!important;
+      }
+    }
+  }
+}
