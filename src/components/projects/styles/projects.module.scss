@@ -1,0 +1,115 @@
+@import "../../../assets/styles/helpers/variables";
+.projects{
+  text-align: center  ;
+  h2{
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 24px 0;
+  }
+  p{font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #999;}
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 48px;
+  }
+  .projectsImg{
+    width: 33.333333%;
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    &:hover{
+      .overlay{
+        opacity: 0.9;
+        z-index: 0;
+      }
+      .text{
+        opacity: 1;
+      }
+    }
+
+  }
+  .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    opacity: 0;
+    background: #3e64ff;
+    z-index: -1;
+    transition: all 0.3s;
+  }
+  .text{
+    text-align: center;
+    position: absolute;
+    max-width: 80%;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    transition: all 0.3s;
+    h3{
+      font-size: 20px;
+      line-height: 1.5;
+      font-weight: 400;
+    }
+    span{
+      color: rgba(255, 255, 255, .8);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
+  .info{
+    padding-top: 112px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    &Item{
+      display: block;
+      width: calc(25% - 60px);
+      text-align: center;
+      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+      padding: 30px 20px;
+      margin: 5px 10px;
+      strong{
+        font-weight: 700;
+        font-size: 30px;
+        color: #3e64ff;
+        display: block;
+        padding: 10px 0;
+      }
+      span{
+        display: block;
+        font-size: 16px;
+        color: rgba(0, 0, 0, .8);
+      }
+    }
+  }
+  @media #{$media-ipad} {
+  .projectsImg {
+    width: 100%;
+  }
+    .infoItem{
+      width: 100%;
+      margin: 10px 0;
+      padding: 30px 0;
+    }
+    .info{
+      width: calc(100% - 30px);
+    }
+}
+}
