@@ -38,7 +38,7 @@ const AboutMe=(props: any)=>{
         }
     ]
     return(
-        <div className={`container ${style.container}`}>
+        <div className={`container ${style.container}`} id = {`about-section`}>
             <div className={style.containerAbout}>
                 <div className={style.left}>
                     <div className={style.image} style={{backgroundImage: `url('${props?.data?.url ? props?.data?.url : imageIntroduce}')`}}/>

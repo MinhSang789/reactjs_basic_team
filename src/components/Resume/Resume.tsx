@@ -154,13 +154,13 @@ const Resume=(props: any)=>{
 
     ]
     return(
-        <div className={`container ${style.container}`}>
+        <div className={`container ${style.container}`} id={`resume-section`}>
             <div className={style.row}>
                 <div className={style.menu}>
                         <ul>
                             {
                                 menus.map((menu)=>
-                                    <li><a>{menu.name}</a></li>
+                                    <li><a href={`#${menu.name}`}>{menu.name}</a></li>
                                 )
                             }
 
@@ -171,7 +171,7 @@ const Resume=(props: any)=>{
                         menus.map((menu) => {
                             if (menu.name == 'Skills') {
                                 return (
-                                    <div>
+                                    <div className={style.content} id={menu.name}>
                                         <h2 className={style.text}>{menu.name}</h2>
                                         <div className={style.block}>
                                                 {
@@ -211,7 +211,9 @@ const Resume=(props: any)=>{
                                                         <div>
                                                             <div className={style.line}>
                                                                 <div className={style.line1}></div>
-                                                                <div className={style.line2} style={{width:`${s.pt}%`}}><div className={style.fff}>{s.pt}%</div></div>
+                                                                <div className={style.line2} style={{width:`${s.pt}%`}}>
+                                                                    <div className={style.fff}>{s.pt}%</div>
+                                                                </div>
                                                             </div>
                                                         </div>
 
@@ -225,13 +227,12 @@ const Resume=(props: any)=>{
                                 )
                             } else {
                                 return (
-                                    <div className={style.content}>
+                                    <div className={style.content} id={menu.name}>
                                         <h2 className={style.text}>{menu.name}</h2>
                                         {
                                             menu.info.map((abc) =>
                                                 <div className={style.row1}>
                                                     <div className={style.flaticonideas}>
-
                                                     </div>
                                                     <div>
                                                         <span className={style.text1}>{abc.time}</span>
@@ -239,7 +240,6 @@ const Resume=(props: any)=>{
                                                         <span className={style.text3}>{abc.university}</span>
                                                         <p className={style.text4}>{abc.note}</p>
                                                     </div>
-
                                                 </div>
                                             )
                                         }

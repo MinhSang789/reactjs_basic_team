@@ -17,6 +17,94 @@
   font-weight: normal;
   font-style: normal;
 }
+flat.ionicons, .ion-ios-arrow-forward:before, .ion-ios-arrow-round-down:before, .ion-md-arrow-back:before {
+  display: inline-block;
+  font-family: "Ionicons";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.ion-ios-arrow-forward:before {
+  content: "\f3d1"}
+.ion-ios-arrow-round-down:before {
+  content: "\f118"}
+.ion-md-arrow-back:before {
+  content: "\f27d"}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+  font-family: Flaticon;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.flaticon-ideas:before {
+  content: "\f100"}
+.flaticon-flasks:before {
+  content: "\f101"}
+.flaticon-analysis:before {
+  content: "\f102"}
+.flaticon-ux-design:before {
+  content: "\f103"}
+.flaticon-idea:before {
+  content: "\f105"}
+.flaticon-innovation:before {
+  content: "\f106"}
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon'!important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-search:before {
+  content: "\f002"}
+.icon-heart:before {
+  content: "\f004"}
+.icon-map-marker:before {
+  content: "\f041"}
+.icon-calendar:before {
+  content: "\f073"}
+.icon-phone:before {
+  content: "\f095"}
+.icon-twitter:before {
+  content: "\f099"}
+.icon-facebook:before {
+  content: "\f09a"}
+.icon-globe:before {
+  content: "\f0ac"}
+.icon-envelope:before {
+  content: "\f0e0"}
+.icon-instagram:before {
+  content: "\f16d"}
+.icon-long-arrow-right:before {
+  content: "\f178"}
+.icon-paper-plane:before {
+  content: "\f1d8"}
+.icon-map-signs:before {
+  content: "\f277"}
+.icon-phone2:before {
+  content: "\e0cd"}
+.icon-chat:before {
+  content: "\e0b7"}
+.icon-person:before {
+  content: "\e7fd"}
+
+
+
+
 html {
   scroll-behavior: smooth;
 }

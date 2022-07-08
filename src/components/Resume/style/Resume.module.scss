@@ -35,7 +35,6 @@
   .menu ul{
     font-weight: 700;
     list-style: none;
-
     padding: 0;
     list-style-type: none;
   }
@@ -79,7 +78,7 @@
   }
   .block2{
     text-align: center;
-    box-shadow: 2px 2px 2px #D9D9D9;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
   }
   .circle{
     display: flex;
@@ -155,15 +154,39 @@
     width: 100%;
     height: 10px;
     background-color: #999999;
+    border-radius: 5px;
     position: absolute;
   }
   .line2{
     width: 80%;
     height: 10px;
     background-color: #3e64ff;
+    border-radius: 5px;
     position: absolute;
   }
   .fff{
     text-align: right;
+    top: -40px;
+    right: 0px;
+    font-weight: bold;
+    position: absolute;
+  }
+  @media (max-width: 800px) {
+    .menu{
+      display: none;
+      width: 0%;
+    }
+    .info{
+      width: 100%;
+    }
+    .block{
+      flex-wrap: wrap;
+    }
+    .block1{
+      width: 100%;
+    }
+    .percentline{
+      width: 100%;
+    }
   }
 }
