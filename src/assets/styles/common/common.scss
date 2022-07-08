@@ -1,22 +1,5 @@
 @import "../helpers/variables";
-@font-face {
-  font-family: "Ionicons";
-  src:   url(../../fonts/ionicons/fonts/ionicons.woff2) format("woff2") ;
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Flaticon";
-  src:   url(../../fonts/flaticon/font/Flaticon.woff) format("woff")  ;
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'icomoon';;
-  src:   url(../../fonts/icomoon/fonts/icomoon.ttf) format("ttf") ;
-  font-weight: normal;
-  font-style: normal;
-}
+
 html {
   scroll-behavior: smooth;
 }

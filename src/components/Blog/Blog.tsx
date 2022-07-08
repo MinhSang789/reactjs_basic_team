@@ -45,7 +45,7 @@ const Blog=()=>{
         des:"A small river named Duden flows by their place and supplies it with the necessary regelialia."
     }
     return(
-        <section className={`${styles.blog}`} id="blog-section">
+        <section className={`${styles.blog}`} id="myblog-section">
             <h2>{blog.title}</h2>
             <p>{blog.description}</p>
             <div className="container">
@@ -56,8 +56,7 @@ const Blog=()=>{
                                 <div className={`${styles.blogItemImg}`} style={{backgroundImage: `url('${value?.imgurl ? value?.imgurl : ""}')`}}></div>
                                 <h3>{value.nameblog}</h3>
                                 <span>{value.time} </span>
-                                <span>{value.user} </span>
-                                <i> x </i>
+                                <span>{value.user} x</span>
                                 <span>{value.numbercmt}</span>
                                 <p>{value.des}</p>
                             </div>
