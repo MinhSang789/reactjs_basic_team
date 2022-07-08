@@ -11,10 +11,11 @@
   }
   .row{
     display: flex;
+    flex-wrap: wrap;
   }
   .row1{
-    width: 25%;
-    padding: 0px 10px;
+    width: 24%;
+    padding: 0.5%;
   }
   h2{
     margin: 0px 0px 24px;
@@ -74,5 +75,11 @@
   }
   .copyright{
     text-align: center;
+  }
+  @media (max-width: 750px) {
+    .row1{
+      width: 100%;
+      padding: 0px 10px;
+    }
   }
 }

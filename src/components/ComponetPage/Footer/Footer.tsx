@@ -21,7 +21,7 @@ const Footer=()=>{
                     <div className={style.row1}>
                         <h2>Links</h2>
                         <ul>
-                            <li><a className={style.ic} > Home</a></li>
+                            <li><a className={style.ic}> Home</a></li>
                             <li><a className={style.ic}> About</a></li>
                             <li><a className={style.ic}> Services</a></li>
                             <li><a className={style.ic}> Projects</a></li>
