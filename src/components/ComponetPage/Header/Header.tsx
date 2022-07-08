@@ -1,6 +1,16 @@
 import styles from './styles/header.module.scss'
-import React from "react";
+import React, {useState} from "react";
 const Header=()=>{
+    const [fix,setfix]=useState(false)
+    function setfixed(){
+        if (window.scrollY> 0){
+            setfix(true)
+        }
+        else {
+            setfix(false)
+        }
+    }
+    window.addEventListener("scroll",setfixed)
     const [isShowModal,setIsShowModal]=React.useState(false)
     const header={
         logo: 'Ronaldo',
@@ -37,7 +47,7 @@ const Header=()=>{
     }
     return(
         <header>
-            <nav>
+            <nav className={`${styles.nav} ${fix ? "sticky" : ""}`} >
                 <div className="container">
                     <div className={`${styles.header}`}>
                         <a href="/" className={`${styles.logo}`}>
