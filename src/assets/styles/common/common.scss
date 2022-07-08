@@ -194,8 +194,11 @@ nav{
   right: 0;
   left: 0;
   top: 0;
-  background: #fff!important;
+  background: transparent;
+  z-index: 1000;
+}
+.sticky{
   -webkit-box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
   box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
-  z-index: 1000;
+  background-color: white!important;
 }
