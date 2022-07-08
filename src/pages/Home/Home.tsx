@@ -5,6 +5,7 @@ import Resume from "../../components/Resume/Resume"
 import Banner from "../../components/Banner/Banner";
 import Projects from "../../components/projects/projects";
 import Blog from "../../components/Blog/Blog";
+import Contact from "../../components/Contact/Contact";
 
 const Home=()=>{
     return(
@@ -14,6 +15,7 @@ const Home=()=>{
             <Resume />
             <Projects/>
             <Blog/>
+            <Contact/>
         </Page>
     )
 }
