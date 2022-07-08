@@ -7,7 +7,7 @@ const Banner=()=>{
         job: "Web Designer"
     }
     return(
-        <section className={`${styles.banner}`}>
+        <section className={`${styles.banner}`} id="home-section">
             <div className={`${styles.overlay}`}></div>
             <div className="container">
                 <div className={`${styles.main}`}>
